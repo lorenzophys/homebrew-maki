@@ -5,21 +5,21 @@
 class Maki < Formula
   desc "Maki, Make but interactive."
   homepage "https://github.com/lorenzophys/maki"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/lorenzophys/maki/releases/download/v0.3.1/maki_Darwin_arm64.tar.gz"
-      sha256 "29fb3fdd9e226467db38f0491a674101dad5aa3853f2f4a332a2e13b5a42d18b"
+      url "https://github.com/lorenzophys/maki/releases/download/v0.3.2/maki_Darwin_arm64.tar.gz"
+      sha256 "b88cbf481cca44d9a53ae906b0c9fe1520211aa00fa6f747f1fef55327c69784"
 
       def install
         bin.install "maki"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lorenzophys/maki/releases/download/v0.3.1/maki_Darwin_x86_64.tar.gz"
-      sha256 "38c0322197932325d661452dc366907f4fe757dfeb124374d75c37d9ba3a490f"
+      url "https://github.com/lorenzophys/maki/releases/download/v0.3.2/maki_Darwin_x86_64.tar.gz"
+      sha256 "65e75628967620fdaf1b7c6fd677bf3b6375a7c0496a67fe3f3a4814ebbe1155"
 
       def install
         bin.install "maki"
@@ -29,16 +29,16 @@ class Maki < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lorenzophys/maki/releases/download/v0.3.1/maki_Linux_arm64.tar.gz"
-      sha256 "c9fe48b703081c915e720eb255f3018597b3b0ea11c55d3fe02ab5303fcd5a37"
+      url "https://github.com/lorenzophys/maki/releases/download/v0.3.2/maki_Linux_arm64.tar.gz"
+      sha256 "9a1cb79676db71a2651948e99b10b96780430d76e4164893eceae307b69f28b6"
 
       def install
         bin.install "maki"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lorenzophys/maki/releases/download/v0.3.1/maki_Linux_x86_64.tar.gz"
-      sha256 "5f950ecbf4186217f95d766d7eb8e451fa4bd0fc67ce721b80f5ac8dee00d816"
+      url "https://github.com/lorenzophys/maki/releases/download/v0.3.2/maki_Linux_x86_64.tar.gz"
+      sha256 "d67e6f03211e52de395229b8360e20e424344c38c74b5c5cc0227441be44cc23"
 
       def install
         bin.install "maki"
